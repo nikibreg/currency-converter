@@ -1,0 +1,144 @@
+@import 'https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap';
+
+* {
+    font-family: 'MuseoModerno', cursive;
+}
+
+body {
+    margin: 0;
+    
+}
+
+nav {
+    height: 100px;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+nav #logo {
+    flex: 1;
+}
+
+nav #not-auth {
+}
+
+nav #auth {
+    display: none;
+}
+
+nav > span > a {
+    margin: 0 20px;
+}
+
+#logout {
+    color: red;
+    cursor: pointer;
+}
+
+nav a, nav span {
+    font-weight: bold;
+    text-decoration: none;
+    color: gray
+}
+
+nav a.active, nav a:hover{
+    color:#163CBC;
+    border-bottom: #163CBC solid 5px;
+    text-decoration: none;
+    border-spacing: 10px;
+}
+
+section{
+    padding: 0 30px; 
+    animation: .5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 slideInFromBottom;
+}
+
+section h1 {
+    margin-bottom: 5px;
+}
+
+#date {
+    color: gray;
+}
+
+#converters {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-field select {
+    border: none;
+    border-bottom: 1px solid;
+    flex: 1;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.form-field label {
+    color: gray;
+    text-transform: uppercase;
+}
+
+#left-selector {
+    
+}
+
+
+#flip {
+    margin: auto;
+    background-color: #3286E7;
+    color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#right-selector {
+
+}
+
+#converters input {
+    border: none;
+    outline: none;
+    font-size: 50px;
+    color: darkgrey;
+}
+
+#converters input::-webkit-outer-spin-button,
+#converters input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+#left-amount {
+
+}
+
+#right-amount {
+
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

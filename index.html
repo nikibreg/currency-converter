@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niki Bregvadze</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <nav>
+        <span id="logo"><a class="active"  href="index.html">PLATORA</a></span>
+
+        <span id="not-auth">
+            <a id="login" href="login.html">Log In</a>
+            <a id="register" href="signup.html">Sign Up</a>
+        </span>
+        <span id="auth">
+            <span id="hello-message"></span>
+            <a id="logout">Log out</a>
+        </span>
+    </nav>
+
+    <section>
+        <h1>Currency Converter</h1>
+        <span id="date"></span>
+
+        <div id="converters">
+            <div id="left">
+                <div class="form-field">
+                    <label for="left-selector">From</label>
+                    <select id="left-selector"></select>
+                </div>
+                <input type="number" id="left-amount" placeholder="0"></input>
+            </div>
+            
+            <button id="flip">FLIP</button>
+            
+            <div id="right">
+                <div class="form-field">
+                    <label for="right-selector">To</label>
+                    <select id="right-selector"></select>
+                </div>
+                <input type="number" id="right-amount" placeholder="0"></input>
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/populate.js"></script>
+<script src="assets/js/convert.js"></script>
+
+</html>
